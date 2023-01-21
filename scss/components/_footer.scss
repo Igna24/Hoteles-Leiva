@@ -1,0 +1,30 @@
+footer {
+  background-color: #424242;
+  color: white;
+  display: flex;
+}
+
+footer li {
+  list-style: none;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 480px) {
+  footer {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .social-links-footer ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-links-footer li {
+    margin: 15px;
+  }
+}

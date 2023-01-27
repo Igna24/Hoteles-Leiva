@@ -38,10 +38,88 @@ body {
   margin-top: 100px;
 }
 
+
+.contacto {
+  margin-left: 9.375rem;
+  margin-top: -3.125rem;
+}
+
+.marcar h2 {
+  color: rgb(255, 255, 255);
+}
+
+.contacto h3 {
+  color: white;
+}
+
+.contacto ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.contacto li {
+  margin-right: 3.125rem;
+}
+
+/* CONTACTO */
+form {
+  width: 60%;
+  margin: 0 auto;
+  background: rgb(136, 136, 136);
+  background: linear-gradient(180deg, rgb(74, 74, 74) 0%, rgb(149, 149, 150) 100%);
+  border-radius: 1.25rem;
+  padding: 10px 20px;
+  margin-top: 8%;
+  border-radius: 20px;
+}
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+input, select {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
+  border-radius: 8px;
+}
+
+button {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/*Components*/
+.hotel-cards {
+  margin-bottom: 80px;
+
 .hotel-title-container p {
   font-weight: 400;
   font-size: 24px;
   line-height: 29px;
+
 }
 
 .hotel-title-container a {
@@ -53,6 +131,14 @@ body {
   justify-content: flex-end;
 }
 
+
+.preview-card:active {
+  transform: translateX(1px);
+  transform: translateY(1px);
+  box-shadow: 0px 0px 26.3px rgba(0, 0, 0, 0.23), 0px 0px 105px rgba(0, 0, 0, 0.115);
+  transition: all 0.1s ease-in-out;
+  background-color: rgba(121, 121, 121, 0.2392156863);
+=======
 .hotel-title-share-elements {
   margin: 10px;
 }
@@ -66,6 +152,7 @@ body {
 /*Components*/
 .hotel-cards {
   margin-bottom: 80px;
+
 }
 
 @media (max-width: 480px) {
@@ -77,19 +164,16 @@ body {
   .preview-card-img {
     width: 90%;
   }
-
   .hotel-card-sumary {
     width: 80%;
     margin-top: -16px;
   }
-
   .preview-card-stars {
     width: 50px;
     height: 50px;
   }
-
   .card-text,
-button {
+  button {
     display: none;
   }
 
@@ -166,12 +250,10 @@ footer a {
     text-align: center;
     margin-top: 30px;
   }
-
   .social-links-footer ul {
     display: flex;
     justify-content: space-between;
   }
-
   .social-links-footer li {
     margin: 15px;
   }
@@ -334,17 +416,14 @@ footer a {
   .img-principal {
     width: 100%;
   }
-
   .nav-principal, .nav-principal-social {
     display: none;
   }
-
   .menu {
     transform-origin: 0% 0%;
     transform: translate(-200%, 0%);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-
   .menu-toggle {
     display: block;
   }

@@ -4,6 +4,12 @@
   overflow-y: auto;
 }
 
+.galery--carrousel {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-y: auto;
+}
+
 .carrousel::-webkit-scrollbar {
   background-color: rgba(160, 160, 160, 0.356);
   border-radius: 6px;
@@ -26,6 +32,11 @@
     margin-bottom: 100px;
     padding: 30px;
   }
+  .galery--carrousel {
+    gap: 2.5rem;
+    margin-bottom: 100px;
+    padding: 30px;
+  }
 
   .carrousel-cards {
     background-color: #c0c0c0;
@@ -38,6 +49,12 @@
 
   @media (min-width: 769px) {
   .carrousel {
+    gap: 2.5rem;
+    margin-bottom: 100px;
+    padding: 30px;
+  }
+
+  .galery--carrousel {
     gap: 2.5rem;
     margin-bottom: 100px;
     padding: 30px;

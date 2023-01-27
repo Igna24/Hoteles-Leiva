@@ -1,0 +1,53 @@
+.carrousel {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-y: auto;
+}
+
+.carrousel::-webkit-scrollbar {
+  background-color: rgba(160, 160, 160, 0.356);
+  border-radius: 6px;
+}
+
+.carrousel::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border-radius: 6px;
+}
+
+@media (max-width: 480px) {
+  .carrousel {
+    display: none;
+  }
+}
+
+  @media (min-width: 481px) and (max-width: 768px) {
+  .carrousel {
+    gap: 2.5rem;
+    margin-bottom: 100px;
+    padding: 30px;
+  }
+
+  .carrousel-cards {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    padding: inherit;
+    width: max-content;
+  } 
+}
+
+  @media (min-width: 769px) {
+  .carrousel {
+    gap: 2.5rem;
+    margin-bottom: 100px;
+    padding: 30px;
+  }
+
+  .carrousel-cards {
+    background-color: #c0c0c0;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    padding: inherit;
+    width: 86%;
+  }
+}

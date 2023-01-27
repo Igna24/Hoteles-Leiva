@@ -1,0 +1,45 @@
+
+.hotel-title-container h1{
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 78px;
+  margin-top: 100px;
+}
+
+.hotel-title-container p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.hotel-title-container a {
+  color: black;
+}
+
+.hotel-title-share {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hotel-title-share-elements {
+  margin: 10px;
+}
+
+
+.hotel-desciption p {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) {
+
+}

@@ -19,6 +19,7 @@ body {
 
   .img-principal {
     width: 100%;
+    margin-top: 20px;
   }
 }
 @media (min-width: 769px) {
@@ -31,13 +32,6 @@ body {
     width: 100%;
   }
 }
-.hotel-title-container h1 {
-  font-weight: 600;
-  font-size: 64px;
-  line-height: 78px;
-  margin-top: 100px;
-}
-
 .hotel-title-container p {
   font-weight: 400;
   font-size: 24px;
@@ -63,38 +57,53 @@ body {
   font-size: 32px;
 }
 
+@media (max-width: 480px) {
+  .hotel-title-container h1 {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .hotel-title-container p {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .hotel-desciption p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .hotel-desciption p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 24px;
+  }
+}
+@media (min-width: 769px) {
+  .hotel-title-container h1 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 78px;
+    margin-top: 100px;
+  }
+}
 .contacto {
-  margin-left: 9.375rem;
-  margin-top: -3.125rem;
+  margin-left: 150px;
+  margin-top: -50px;
 }
 
-.marcar h2 {
-  color: white;
-}
-
-.contacto h3 {
-  color: white;
-}
-
-.contacto ul {
-  display: flex;
-  list-style-type: none;
-}
-
-.contacto li {
-  margin-right: 3.125rem;
-}
-
-/* CONTACTO */
 form {
-  width: 60%;
+  width: 30%;
   margin: 0 auto;
-  background: #888888;
-  background: linear-gradient(180deg, #4a4a4a 0%, #959596 100%);
-  border-radius: 1.25rem;
-  padding: 10px 20px;
-  margin-top: 8%;
+  background-color: #c0c0c0;
   border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 8px;
+  margin-bottom: 80px;
+  border-radius: 10px;
 }
 
 input, textarea {
@@ -126,13 +135,9 @@ input, select {
 button {
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 15px;
   border-radius: 8px;
   border: none;
-}
-
-button:hover {
-  cursor: pointer;
 }
 
 /*Components*/
@@ -319,6 +324,7 @@ footer a {
 }
 
 .menu-toggle {
+  margin-top: 50px;
   position: relative;
   right: -20px;
   display: none;
@@ -403,10 +409,6 @@ footer a {
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .img-principal {
-    width: 100%;
-  }
-
   .nav-principal, .nav-principal-social {
     display: none;
   }
@@ -476,16 +478,6 @@ footer a {
 .hotel-services {
   margin-top: 60px;
   margin-bottom: 60px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-}
-
-.hotel-services-ceils th {
-  border: 2px solid #9D9B9B;
-  padding: 40px;
-  font-size: 24px;
-  border-radius: 2px;
 }
 
 /*availability*/
@@ -509,16 +501,172 @@ footer a {
   line-height: 29px;
 }
 
-.hotel-availability-table td {
-  padding: 10px;
-  border-left: 3px solid #D9D9D9;
-  border-bottom: 3px solid #D9D9D9;
-  width: 70%;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-}
+@media (max-width: 480px) {
+  .hotel-services {
+    display: none;
+  }
 
+  .hotel-availability {
+    display: none;
+  }
+
+  .hotel-availability-mobile img {
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 30px;
+  }
+
+  .hotel-availability-mobile h2 {
+    margin-top: 30px;
+  }
+
+  .hotel-availability-card {
+    border-bottom: 5px solid #d9d9d9;
+    border-top: 5px solid #d9d9d9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    padding: 25px;
+  }
+
+  .hotel-services-mobile h2 {
+    margin-top: 30px;
+  }
+
+  .hotel-services-mobile li {
+    border-radius: 2px;
+    border: 1px solid #d9d9d9d9;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .hotel-services-mobile ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 5px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .hotel-services {
+    display: none;
+  }
+
+  .hotel-availability {
+    display: none;
+  }
+
+  .hotel-availability-mobile img {
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 30px;
+  }
+
+  .hotel-availability-mobile h2 {
+    margin-top: 30px;
+  }
+
+  .hotel-availability-card {
+    border-bottom: 5px solid #d9d9d9;
+    border-top: 5px solid #d9d9d9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    padding: 25px;
+  }
+
+  .hotel-services-mobile h2 {
+    margin-top: 30px;
+  }
+
+  .hotel-services-mobile li {
+    border-radius: 2px;
+    border: 1px solid #d9d9d9d9;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .hotel-services-mobile ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 5px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hotel-services-mobile {
+    display: none;
+  }
+
+  .hotel-availability-mobile {
+    display: none;
+  }
+
+  .hotel-services {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .hotel-availability-table td {
+    padding: 10px;
+    border-left: 3px solid #D9D9D9;
+    border-bottom: 3px solid #D9D9D9;
+    width: 70%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .hotel-services-ceils th {
+    border: 2px solid #9D9B9B;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 2px;
+  }
+}
+@media (min-width: 1201px) {
+  .hotel-services-mobile {
+    display: none;
+  }
+
+  .hotel-availability-mobile {
+    display: none;
+  }
+
+  .hotel-services {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .hotel-availability-table td {
+    padding: 10px;
+    border-left: 3px solid #D9D9D9;
+    border-bottom: 3px solid #D9D9D9;
+    width: 70%;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .hotel-services-ceils th {
+    border: 2px solid #9D9B9B;
+    padding: 40px;
+    font-size: 24px;
+    border-radius: 2px;
+  }
+}
 @media (min-width: 481px) and (max-width: 768px) {
   .more-info-button {
     border-radius: 10px;
@@ -539,6 +687,8 @@ footer a {
 }
 /*Hotel page*/
 .reserve-button {
+  text-decoration: none;
+  color: black;
   padding: 15px;
   border: none;
   border-radius: 10px;

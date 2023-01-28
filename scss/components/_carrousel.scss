@@ -4,6 +4,12 @@
   overflow-y: auto;
 }
 
+.galery--carrousel {
+  display: grid;
+  grid-auto-flow: column;
+  overflow-y: auto;
+}
+
 .carrousel::-webkit-scrollbar {
   background-color: rgba(160, 160, 160, 0.356);
   border-radius: 6px;
@@ -22,7 +28,6 @@
   .galery--carrousel-cards {
     width: 350px;
   }
-
 }
 
   @media (min-width: 481px) and (max-width: 768px) {
@@ -31,13 +36,10 @@
     margin-bottom: 100px;
     padding: 30px;
   }
-<<<<<<< Updated upstream
 
   .galery--carrousel-cards {
     width: 300px;
   }
-=======
->>>>>>> Stashed changes
 
   .carrousel-cards {
     background-color: #c0c0c0;
@@ -58,15 +60,12 @@
     overflow-y: auto;
   }
 
-<<<<<<< Updated upstream
   .galery--carrousel {
     gap: 1rem;
     margin-bottom: 50px;
     padding: 30px;
   }
 
-=======
->>>>>>> Stashed changes
   .carrousel-cards {
     background-color: #c0c0c0;
     border-radius: 10px;

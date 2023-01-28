@@ -1,21 +1,33 @@
+@media (max-width: 480px) {
+  .more-info-button {
+    display: none;
+  }
+}
+
 
 @media (min-width: 481px) and (max-width: 768px) {
   .more-info-button {
+    background-color: #d9d9d9d9;
     border-radius: 10px;
     border: none;
     left: 232px;
     padding: 20px;
     position: relative;
+    text-decoration: none;
+    color: black;
   }
 }
 
 @media (min-width: 769px) {
   .more-info-button {
-  border-radius: 10px;
-  border: none;
-  left: 232px;
-  padding: 20px;
-  position: relative;
+    background-color: #d9d9d9d9;
+    border-radius: 10px;
+    border: none;
+    left: 232px;
+    padding: 20px;
+    position: relative;
+    text-decoration: none;
+    color: black;
   }
 }
 

@@ -24,6 +24,11 @@
   .carrousel {
     display: none;
   }
+
+  .galery--carrousel-cards {
+    width: 350px;
+  }
+
 }
 
   @media (min-width: 481px) and (max-width: 768px) {
@@ -32,10 +37,9 @@
     margin-bottom: 100px;
     padding: 30px;
   }
-  .galery--carrousel {
-    gap: 2.5rem;
-    margin-bottom: 100px;
-    padding: 30px;
+
+  .galery--carrousel-cards {
+    width: 300px;
   }
 
   .carrousel-cards {
@@ -52,11 +56,14 @@
     gap: 2.5rem;
     margin-bottom: 100px;
     padding: 30px;
+    display: grid;
+    grid-auto-flow: column;
+    overflow-y: auto;
   }
 
   .galery--carrousel {
-    gap: 2.5rem;
-    margin-bottom: 100px;
+    gap: 1rem;
+    margin-bottom: 50px;
     padding: 30px;
   }
 
@@ -66,5 +73,15 @@
     margin-bottom: 60px;
     padding: inherit;
     width: 86%;
+  }
+
+  .galery--carrousel::-webkit-scrollbar {
+    background-color: rgba(160, 160, 160, 0.356);
+    border-radius: 6px;
+  }
+  
+  .galery--carrousel::-webkit-scrollbar-thumb {
+    background-color: #b3b3b3;
+    border-radius: 6px;
   }
 }

@@ -1,19 +1,36 @@
 .contacto{
-  margin-left: 150px;
-  margin-top: -50px;
+  margin-left: 9.375rem;
+  margin-top: -3.125rem;
 }
 
+.marcar h2{
+  color: rgb(255, 255, 255);
+}
 
+.contacto h3{
+  color: white;
+}
+
+.contacto ul{
+  display: flex;
+  list-style-type:none ;
+}
+
+.contacto li{
+  margin-right: 3.125rem;
+}
+
+/* CONTACTO */
 
 form{
-  width: 30%;
+  width: 60%;
   margin:0 auto;
-  background-color: #c0c0c0;
-  border-radius: 20px;
+  background: rgb(136, 136, 136);
+  background: linear-gradient(180deg, rgb(74, 74, 74) 0%, rgb(149, 149, 150) 100%);
+  border-radius: 1.25rem;
   padding: 10px 20px;
-  margin-top: 8px;
-  margin-bottom: 80px;
-  border-radius: 10px;
+  margin-top: 8%;
+  border-radius: 20px;
 }
 
 input, textarea{
@@ -45,7 +62,11 @@ input, select{
 button{
   background-color: white;
   color: black;
-  padding: 15px;
+  padding: 10px;
   border-radius: 8px;
   border: none;
+}
+
+button:hover{
+  cursor: pointer;
 }
